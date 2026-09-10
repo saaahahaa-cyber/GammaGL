@@ -123,10 +123,8 @@ def main(args):
         subset=True,
         split='val'
     )
-    print("正在计算 Train RWSE...")
     train_dataset = add_rwse_to_dataset(train_dataset)
 
-    print("正在计算 Val RWSE...")
     val_dataset = add_rwse_to_dataset(val_dataset)
 
     train_loader = DataLoader(
